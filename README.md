@@ -18,31 +18,4 @@ I've decided to share my work for the hard work of some (few) people, who are wo
 
 
 <br><br><br><br>
-######### ##########<br>
-Original Description<br>
-######### ########## <br>
-<br><br><br><br>
-# HotAirBalloon
-
-![](https://raw.githubusercontent.com/solo5star/HotAirBalloon/master/assets/image/HotAirBalloon.gif)
-
-<br>
-
-# What is this?
-An example plugin of vehicle.<br>
-Need more description? Gif says it all!<br>
-
-<br>
-
-# How to use?
-Type command `/vehicle create` and just ride!<br>
-On windows 10, *right click*<br>
-On mobile phone, *long press*<br>
-
-<br>
-
-# Key manual
-**`↑`** Go straight and rise to the air<br>
-**`→`** Turns vehicle yaw right<br>
-**`←`** Turns vehicle yaw left<br>
-**`↓`** Go straight and descend in the air<br>
+# forked from solo5star/HotAirBalloon
