@@ -12,7 +12,7 @@ I've decided to share my work for the hard work of some (few) people, who are wo
 - Work with 3.0 API
 
 # To Do
-- [ ] Config: Remove entity after 2 minutes without beeing rided
+- [ ] Config: Remove entity after 2 minutes without being rided
 - [ ] Prevent one player to spawn more than one
 - [ ] Feature: Add other entity & Prevent one player to spawn more than one type of entity
 
