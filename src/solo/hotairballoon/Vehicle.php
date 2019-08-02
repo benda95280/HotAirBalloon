@@ -40,8 +40,8 @@ abstract class Vehicle extends \pocketmine\entity\Vehicle{
 		parent::__construct($level, $nbt);
 	}
 
-	protected function initEntity(CompoundTag $nbt) : void{
-		parent::initEntity($nbt);
+	public function initEntity() : void{
+		parent::initEntity();
 
 		$this->uuid = UUID::fromRandom();
 
@@ -151,7 +151,7 @@ abstract class Vehicle extends \pocketmine\entity\Vehicle{
 
 		$pk = new PlayerListPacket();
 		$pk->type = PlayerListPacket::TYPE_ADD;
-		$pk->entries = [PlayerListEntry::createAdditionEntry($this->uuid, $this->id, $this->getName(), $this->getName(), 0, $this->getSkin())];
+		$pk->entries[] = PlayerListEntry::createAdditionEntry($this->uuid, $this->id, $this->getName(), $this->getSkin(), $this->getName())	;
 		$player->sendDataPacket($pk);
 
 		$pk = new AddPlayerPacket();
@@ -163,7 +163,7 @@ abstract class Vehicle extends \pocketmine\entity\Vehicle{
 		$pk->yaw = $this->yaw;
 		$pk->pitch = $this->pitch;
 		$pk->item = Item::get(Item::AIR);
-		$pk->attributes = $this->attributeMap->getAll();
+		// $pk->attributes = $this->attributeMap->getAll();
 		$pk->metadata = $this->propertyManager->getAll();
 		$player->sendDataPacket($pk);
 
@@ -171,7 +171,7 @@ abstract class Vehicle extends \pocketmine\entity\Vehicle{
 
 		$pk = new PlayerListPacket();
 		$pk->type = PlayerListPacket::TYPE_REMOVE;
-		$pk->entries = [PlayerListEntry::createRemovalEntry($this->uuid)];
+		$pk->entries[] = 	($this->uuid);
 		$player->sendDataPacket($pk);
 	}
 }

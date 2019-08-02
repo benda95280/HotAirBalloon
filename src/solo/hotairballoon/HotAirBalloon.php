@@ -25,13 +25,13 @@ class HotAirBalloon extends PluginBase{
 
 	public static $resources;
 
-	protected function onLoad(){
+	public function onLoad(){
 		self::$resources = new Resources($this);
 
 		Entity::registerEntity(AirVehicle::class, false, ["airvehicle"]);
 	}
 
-	protected function onEnable(){
+	public function onEnable(){
 		S::command(
 			"vehicle registerskin",
 			"Register your skin to resources for visualize vehicle.",
@@ -66,7 +66,7 @@ class HotAirBalloon extends PluginBase{
 		new VehicleHandler($this);
 	}
 
-	protected function onDisable(){
+	public function onDisable(){
 		self::$resources->save();
 	}
 }

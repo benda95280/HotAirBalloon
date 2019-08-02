@@ -21,8 +21,8 @@ class AirVehicle extends Vehicle{
 		parent::__construct($level, $nbt);
 	}
 
-	protected function initEntity(CompoundTag $nbt) : void{
-		parent::initEntity($nbt);
+	public function initEntity() : void{
+		parent::initEntity();
 
 		$this->setGenericFlag(Entity::DATA_FLAG_AFFECTED_BY_GRAVITY, false);
 	}
