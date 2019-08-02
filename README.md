@@ -12,15 +12,16 @@ I've decided to share my work for the hard work of some (few) people, who are wo
 - Work with 3.0 API
 
 # To Do
-- Config: Remove entity after 2 minutes without beeing rided
-- Prevent one player to spawn more than one
-- Feature: Add other entity & Prevent one player to spawn more than one type of entity
+- [ ] Config: Remove entity after 2 minutes without beeing rided
+- [ ] Prevent one player to spawn more than one
+- [ ] Feature: Add other entity & Prevent one player to spawn more than one type of entity
+
 
 <br><br><br><br>
 ######### ##########<br>
 Original Description<br>
 ######### ########## <br>
-
+<br><br><br><br>
 # HotAirBalloon
 
 ![](https://raw.githubusercontent.com/solo5star/HotAirBalloon/master/assets/image/HotAirBalloon.gif)
